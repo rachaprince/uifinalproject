@@ -1,0 +1,214 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    padding-top: 50px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+  
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0px 50px 0px;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: inline;
+    text-decoration: none;
+    color: #999999;
+
+}
+
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+.sidebar-nav>li>ul {
+    padding: 0;
+}
+
+.sidebar-nav>li>a {
+    display: block;
+    padding: 4% 3% 4% 15%;
+    text-decoration: none;
+    color: #999;
+}
+
+@media(min-width:500px) {
+    #wrapper {
+        padding-left: 30%;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 30%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+/*Image Navigation */
+.indexpicture{
+    width: 70%;
+    height: 70%;
+    border-radius: 15%;
+}
+
+/*main book screen*/
+.mainpicture{
+    width:100%;
+    border-radius: 15%;
+    padding: 10px;
+}
+
+.center{
+    text-align: center;
+}
+
+.gray{
+      background-color: #EDF2F5;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: -1;
+}
+
+.description{
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 15px;
+    opacity: .99;
+}
+
+.padding{
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 35px;
+}
+
+.text{
+    padding: 15px;
+    border-radius: 10%;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: -10px;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.caption{
+    background-color: #C9CFD5;
+    border-radius: 10px;
+    margin-top: -20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.scrollbar{
+     position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+

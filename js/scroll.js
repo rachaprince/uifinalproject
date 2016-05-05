@@ -15,11 +15,11 @@ $(function() {
 });
 });
 
-$(document).ready(function (e) {
+// $(document).ready(function (e) {
 
-    $('a[href*="#"]:not([href="#"])').click(function (e) { //Relative ( to its parent) mouse position 
-        var posX = $(this).position().left,
-            posY = $(this).position().top;
-   
-    });
-});
+//     $('a[href*="#"]:not([href="#"])').click(function (e) { //Relative ( to its parent) mouse position 
+//         var posX = $(this).position().left,
+//             posY = $(this).position().top;
+//       alert(posX +' ' + posY);
+//     });
+// });

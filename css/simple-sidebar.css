@@ -15,10 +15,10 @@
     transition: all 0.5s ease;
 }
 
-#wrapper.toggled {
+/*#wrapper.toggled {
     padding-left: 250px;
 }
-
+*/
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -27,6 +27,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
+    overflow-x: visible;
     background: #000;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -34,9 +35,25 @@
     transition: all 0.5s ease;
 }
 
-#wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+#second-menu{
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    overflow-x: visible;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
+
+/*#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}*/
 
 #page-content-wrapper {
     width: 100%;
@@ -45,10 +62,10 @@
   
 }
 
-#wrapper.toggled #page-content-wrapper {
+/*#wrapper.toggled #page-content-wrapper {
     position: absolute;
     margin-right: -250px;
-}
+}*/
 
 /* Sidebar Styles */
 
@@ -74,7 +91,7 @@
 }
 
 
-.sidebar-nav li a:hover {
+.sidebar-nav img :hover {
     text-decoration: none;
     color: #fff;
     background: rgba(255,255,255,0.2);
@@ -117,9 +134,9 @@
         padding-left: 30%;
     }
 
-    #wrapper.toggled {
-        padding-left: 0;
-    }
+   /* #wrapper.toggled {
+        /*padding-left: 0;
+    }*/
 
     #sidebar-wrapper {
         width: 30%;
@@ -134,9 +151,17 @@
         position: relative;
     }
 
-    #wrapper.toggled #page-content-wrapper {
+   /* #wrapper.toggled #page-content-wrapper {
         position: relative;
-        margin-right: 0;
+      /*  margin-right: 0;
+    }*/
+
+    #second-menu{
+        width:0;
+    }
+
+    #wrapper.toggled #second-menu{
+        width: 30%;
     }
 }
 
@@ -211,4 +236,40 @@ h3 {
   border: 1px solid transparent;
 }
 
+.leftshift{
+    padding: 20px 0px 20px 50px;
+}
 
+.glyphicon{
+    font-size: 40px;
+}
+
+.topshift{
+    padding: 10px 10px 10px 10px;
+    vertical-align: middle;
+}
+
+.centershift{
+    padding-top: 15%;
+}
+
+.expand{
+    overflow: visible;
+    width: 500px;
+    height: 200px;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+.behind{
+    z-index: -1;
+}
+
+ a img:hover{
+    -moz-box-shadow: 0 0 30px #ccc;
+     -webkit-box-shadow: 0 0 30px #ccc; 
+     box-shadow: 0 0 30px #ccc; } 
+}

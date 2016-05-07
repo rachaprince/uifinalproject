@@ -156,7 +156,14 @@
     height: 70%;
     border-radius: 15%;
 }
+.side-nav{
+    padding-top: 30px;
+}
 
+.side-pic{
+    width: 90%;
+    border-radius: 15%;
+}
 
 .mainpicture{
     width:100%;
@@ -257,10 +264,10 @@ h3 {
 
 .index-title{
     position: fixed;
-    width: 32%;
+    width: 33.3333%;
     top:70px;
     z-index: 4;
-    margin-right: 1px;
+    margin-left: -15px;
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     background-color: #BAC0C6;
@@ -279,7 +286,8 @@ h3 {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    padding-top: 125px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #wrapper.toggled #index{
@@ -307,4 +315,42 @@ h3 {
 
 #wrapper.toggled .menu-toggle{
     display: none;
+}
+
+.rotate {
+color: white;
+font-size: 20px;
+
+ font-family: 'Roboto Slab', serif;
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+position: relative;
+
+bottom: -45%;
+left: 4%;
+
+}
+
+.row{
+ margin-top: 20px;
+}
+
+.left{
+    text-align: left;
+    position: relative;
+    left: -10%;
+    padding-top: 15%;
 }

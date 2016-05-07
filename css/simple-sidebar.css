@@ -6,7 +6,7 @@
 
 /* Toggle Styles */
 
-#wrapper {
+/*#wrapper {
     padding-left: 0;
     padding-top: 50px;
     -webkit-transition: all 0.5s ease;
@@ -14,12 +14,12 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
+*/
 /*#wrapper.toggled {
     padding-left: 250px;
 }
 */
-#sidebar-wrapper {
+/*#sidebar-wrapper {
     z-index: 1000;
     position: fixed;
     left: 250px;
@@ -33,34 +33,18 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-}
-
-#second-menu{
-    z-index: 1000;
-    position: fixed;
-    left: 250px;
-    width: 0;
-    height: 100%;
-    margin-left: -250px;
-    overflow-y: auto;
-    overflow-x: visible;
-    background: #000;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
+}*/
 
 /*#wrapper.toggled #sidebar-wrapper {
     width: 250px;
 }*/
 
-#page-content-wrapper {
+/*#page-content-wrapper {
     width: 100%;
     position: absolute;
     padding: 15px;
   
-}
+}*/
 
 /*#wrapper.toggled #page-content-wrapper {
     position: absolute;
@@ -69,16 +53,16 @@
 
 /* Sidebar Styles */
 
-.sidebar-nav {
+/*.sidebar-nav {
     position: absolute;
     top: 0;
     width: 100%;
     margin: 0;
     padding: 20px 0px 50px 0px;
     list-style: none;
-}
+}*/
 
-.sidebar-nav li {
+/*.sidebar-nav li {
     text-indent: 20px;
     line-height: 40px;
 }
@@ -95,9 +79,9 @@
     text-decoration: none;
     color: #fff;
     background: rgba(255,255,255,0.2);
-
-}
-
+*/
+ 
+/*
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
     text-decoration: none;
@@ -127,8 +111,8 @@
     padding: 4% 3% 4% 15%;
     text-decoration: none;
     color: #999;
-}
-
+}*/
+/*
 @media(min-width:500px) {
     #wrapper {
         padding-left: 30%;
@@ -136,7 +120,7 @@
 
    /* #wrapper.toggled {
         /*padding-left: 0;
-    }*/
+    }
 
     #sidebar-wrapper {
         width: 30%;
@@ -151,10 +135,10 @@
         position: relative;
     }
 
-   /* #wrapper.toggled #page-content-wrapper {
+   #wrapper.toggled #page-content-wrapper {
         position: relative;
       /*  margin-right: 0;
-    }*/
+    }
 
     #second-menu{
         width:0;
@@ -163,16 +147,17 @@
     #wrapper.toggled #second-menu{
         width: 30%;
     }
-}
+}*/
 
-/*Image Navigation */
+/*My CSS */
+
 .indexpicture{
     width: 70%;
     height: 70%;
     border-radius: 15%;
 }
 
-/*main book screen*/
+
 .mainpicture{
     width:100%;
     border-radius: 15%;
@@ -185,6 +170,7 @@
 
 .gray{
       background-color: #EDF2F5;
+      padding: 50px 15px 15px 15px;
 }
 
 .container-fluid {
@@ -257,19 +243,68 @@ h3 {
     overflow: visible;
     width: 500px;
     height: 200px;
-    background: #000;
-    position: fixed;
-    top: 0;
-    left: 0;
+    background: #3F2DD2;
     z-index: 2000;
-}
-
-.behind{
-    z-index: -1;
+    position: fixed;
+    left:500px;
 }
 
  a img:hover{
     -moz-box-shadow: 0 0 30px #ccc;
      -webkit-box-shadow: 0 0 30px #ccc; 
-     box-shadow: 0 0 30px #ccc; } 
+     box-shadow: 0 0 30px #ccc;  
+}
+
+.index-title{
+    position: fixed;
+    width: 32%;
+    top:70px;
+    z-index: 4;
+    margin-right: 1px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    background-color: #BAC0C6;
+
+  
+}
+
+#index {
+    height: 100%;
+    z-index: 3;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: visible;
+    background-color: #000000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    padding-top: 125px;
+}
+
+#wrapper.toggled #index{
+    overflow: hidden;
+}
+
+#wrapper.toggled .book{
+    overflow: hidden;
+}
+
+#rose-nav{
+    position: fixed;
+    width: 66.666%;
+    height: 200px;
+    z-index: 4000;
+    background-color: black;
+    border-radius: 20px;
+    display: none;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: opacity 1s ease;
+}
+
+
+#wrapper.toggled .menu-toggle{
+    display: none;
 }

@@ -1,3 +1,7 @@
+
+// Scroll function adopted from https://css-tricks.com/snippets/jquery/smooth-scrolling/ 
+
+
 $(document).ready(function(){
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
@@ -14,6 +18,9 @@ $(function() {
   });
 });
 });
+
+
+//adding div function used https://www.kirupa.com/html5/getting_mouse_click_position.htm as reference code 
 
  $(document).ready(function (e) {
 
@@ -56,6 +63,4 @@ $(function() {
       });
  
 });
-   
 
-   // helper function to get an element's exact position
